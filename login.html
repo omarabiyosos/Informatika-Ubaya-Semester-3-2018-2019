@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+		<style type="text/css">
+			body{
+				background: linear-gradient(to bottom right, #009999, #99ffcc) no-repeat;
+				background-size: cover;
+
+			}
+			.hidden{visibility: hidden; height: 219px;}
+			#wrapper{
+				padding: 10px;
+				width: 350px;
+				height: ;
+				margin: auto;
+				text-align: center;	
+			}
+			fieldset{
+				padding: 20px;
+				background-color: white;
+				border: 1px solid black;
+			}
+			label{
+				display: inline-block;
+				width: 70px;
+				text-align: right;
+				margin-bottom: 20px;
+			}
+			input#login{
+				width: 220px;
+			}
+
+			@media screen and (max-width: 480px){
+				#wrapper{
+					width: 100%;
+					margin: 0px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<div class="hidden"></div>
+			</header>
+			<section>
+				<fieldset>
+					<form>
+						<label for="user">Username: </label>
+						<input type="text" id="user" placeholder="Contoh: saiber99"><br>
+						<label for="pass">Password: </label>
+						<input type="password" id="pass"><br>
+						<input type="submit" id="login" value="LOGIN">
+					</form>
+				</fieldset>
+			</section>
+			<footer>
+				<p>Copyright &copy; 2018 - This page is made by Saiber.</p>
+				<div class="hidden"></div>
+			</footer>
+		</div>
+	</body>
+</html>
