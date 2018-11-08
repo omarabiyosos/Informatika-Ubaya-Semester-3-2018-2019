@@ -1,64 +1,33 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Login</title>
-		<style type="text/css">
-			body{
-				background: linear-gradient(to bottom right, #009999, #99ffcc) no-repeat;
-				background-size: cover;
-
-			}
-			.hidden{visibility: hidden; height: 219px;}
-			#wrapper{
-				padding: 10px;
-				width: 350px;
-				height: ;
-				margin: auto;
-				text-align: center;	
-			}
-			fieldset{
-				padding: 20px;
-				background-color: white;
-				border: 1px solid black;
-			}
-			label{
-				display: inline-block;
-				width: 70px;
-				text-align: right;
-				margin-bottom: 20px;
-			}
-			input#login{
-				width: 220px;
-			}
-
-			@media screen and (max-width: 480px){
-				#wrapper{
-					width: 100%;
-					margin: 0px;
-				}
-			}
-		</style>
+		<title>Login - Subject Selector</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-		<div id="wrapper">
-			<header>
-				<div class="hidden"></div>
-			</header>
-			<section>
-				<fieldset>
-					<form>
-						<label for="user">Username: </label>
-						<input type="text" id="user" placeholder="Contoh: saiber99"><br>
-						<label for="pass">Password: </label>
-						<input type="password" id="pass"><br>
-						<input type="submit" id="login" value="LOGIN">
+		<div id="login">
+			<div id="wrapper">
+				<section>
+					<form class="login">
+						<h1>Subject Selector</h1>
+						<p>aplikasi pemilihan matakuliah untuk asisten dosen</p>
+						<br>
+						<input type="text" id="user" placeholder="sNRP"><br>
+						<select id="mail">
+							<option value="@student.ubaya.ac.id">@student.ubaya.ac.id</option>
+							<option value="@staff.ubaya.ac.id">@staff.ubaya.ac.id</option>
+						</select><br>
+						<input type="password" id="pass" placeholder="Password"><br>
+						<input type="submit" id="login" value="Log In"><br>
+						<br>
+						<p>Forgot password? Call the administrator</p>
 					</form>
-				</fieldset>
-			</section>
-			<footer>
-				<p>Copyright &copy; 2018 - This page is made by Saiber.</p>
-				<div class="hidden"></div>
-			</footer>
+				</section>
+				<footer>
+					<p>About Us | Ads | Help Center | Privacy &amp; Policy </p>
+					<p>Copyright &copy; 2018 by Fathul Husnan, Omar Sugiharto, Joann Albertus Saumana.</p>
+				</footer>
+			</div>
 		</div>
 	</body>
 </html>
