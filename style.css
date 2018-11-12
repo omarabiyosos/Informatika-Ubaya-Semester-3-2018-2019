@@ -100,7 +100,7 @@ input#submit:hover, input#submit:active, button:hover, button:active{
 	background-color: rgba(255, 255, 255, 0.1);
 }
 @media screen and (max-device-width: 480px){
-	#wrapper{
+	#wrapperlogin{
 		width: 300px;
 		padding: 0;
 	}
