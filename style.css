@@ -1,11 +1,48 @@
-#login{
-	color: white;
-	font-family: calibri, arial;
-}
 body{
+	font-family: calibri, arial;
+	background-color: #DDDDDD;
+}
+#login, nav{
+	color: white;
 	background: linear-gradient(to bottom right, #663300, #cc9900) no-repeat;
 }
-#wrapper{
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 280px;
+	height: 1000px;
+	box-shadow: 3px 0 5px gray;
+}
+nav ul{
+	padding: 0;
+	margin: 0;
+}
+nav a{
+	color: white;
+	text-decoration: none;
+}
+nav li{
+	text-align: center;
+	padding: 15px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	list-style-type: none;
+}
+nav li:hover{
+	background-color: rgba(255, 255, 255, 0.3);
+}
+header, footer{
+	text-align: center;
+}
+header, section, footer{
+	margin-left: 280px;
+	margin-bottom: 10px;
+	box-shadow: 0 3px 5px gray;
+	border-bottom: 1px solid gray;
+	padding: 5px;
+	background-color: white;
+}
+#wrapperlogin{
 	padding: 10px;
 	width: 350px;
 	margin: auto;
@@ -14,11 +51,18 @@ body{
 h1{
 	font-family: cambria;
 }
-.login{
+form.login{
 	margin: 119px 0;
 }
-.login p{
+form.login p{
 	font-size: 0.8em;
+}
+header.login, section.login, footer.login{
+	margin: 0;
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+	padding: 0;
 }
 input, select{
 	margin-top: 10px;
@@ -42,17 +86,19 @@ input#user, input#pass, select#mail{
 	border: none;
 	border-collapse: 10%;
 	padding: 10px;
+	color: white;
 }
-input#login, button{
+input#submit, button{
 	width: 270px;
 	padding: 10px;
 	background-color: transparent;
 	border: 1px solid rgba(255, 255, 255, 0.3);
+	color: white;
+	font-family: calibri, arial;
 }
-input#login:hover, input#login:active, button:hover, button:active{
+input#submit:hover, input#submit:active, button:hover, button:active{
 	background-color: rgba(255, 255, 255, 0.1);
 }
-
 @media screen and (max-device-width: 480px){
 	#wrapper{
 		width: 300px;
