@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Pilih Matakuliah</title>
+		<title>Pilih Kelas</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
@@ -10,19 +10,89 @@
 			<ul>
 				<a href="index.html"><li>Home</li></a>
 				<a href="daftar.html"><li>Daftar Matakuliah</li></a>
-				<a href="pilih.html"><li>Pilih Matakuliah</li></a>
+				<a href="pilih.html"><li>Pilih Kelas Asistensi</li></a>
 				<a href="http://my.ubaya.ac.id/" target="_blank"><li>My UBAYA</li></a>
 				<a href="login.html"><li>Log Out</li></a>
 			</ul>
 		</nav>
 		<div id="wrapper">
 			<header>
-				<h1>Pilih Matakuliah</h1>
+				<h1>Pilih Kelas Asistensi</h1>
+				<p>Pilih dan atur jadwal asistensi yang ingin Anda daftarkan.</p>
 			</header>
 			<section>
-				<p>Ini isi</p>
+				<form>
+					<div id="wrapperfieldset">
+						<div class="kumpulfield">
+							<fieldset class="left">
+								<legend>Data Diri</legend>
+								<label for="name" class="label">Nama lengkap: </label><br>
+								<input type="text" name="name" id="name" value="Fathul Husnan" disabled><br>
+								<label for="nrp" class="label">NRP:</label><br>
+								<input type="text" name="nrp" id="nrp" value="160417156" disabled><br>
+								<label for="fakultas" class="label">Fakultas:</label><br>
+								<input type="text" name="fakultas" id="fakultas" value="Teknik" disabled><br>
+								<label for="jurusan" class="label">Jurusan:</label><br>
+								<input type="text" name="jurusan" id="jurusan" value="Informatika" disabled><br>
+							</fieldset>
+							<fieldset class="left">
+								<legend>Kontak</legend>
+								<label for="mail" class="label">Email:</label><br>
+								<input type="email" name="mail" id="mail" value="s160417156@student.ubaya.ac.id" disabled><br>
+								<label for="hp" class="label">Nomor HP:</label><br>
+								<input type="text" name="hp" id="hp"><br>
+								<label for="wa" class="label">Support WA?</label><br>
+								<input type="radio" name="wa" id="wa" value="iya"> <label>Iya</label><br>
+								<input type="radio" name="wa" id="wa" value="tidak"> <label>Tidak</label><br>
+								<label for="line" class="label">ID LINE:</label><br>
+								<input type="text" name="line" id="line">
+							</fieldset>
+						</div>
+					</div>
+					<fieldset>
+						<legend>Pilih Kelas Asistensi</legend>
+						<table id="pilih">
+							<thead>
+								<tr>
+									<th class="col1"></th>
+									<th class="col2">Kode Matakuliah</th>
+									<th class="col3">Nama Matakuliah</th>
+									<th class="col4">Prioritas</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="checkbox" name="matkul" value="matkul1"></td>
+									<td>10000000</td>
+									<td>Ini nama matakuliah</td>
+									<td><input type="number" name="prioritas" class="prioritas" min="0" max="10" value="0"></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="matkul" value="matkul1"></td>
+									<td>10000000</td>
+									<td>Ini nama matakuliah</td>
+									<td><input type="number" name="prioritas" class="prioritas" min="0" max="10" value="0"></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="matkul" value="matkul1"></td>
+									<td>10000000</td>
+									<td>Ini nama matakuliah</td>
+									<td><input type="number" name="prioritas" class="prioritas" min="0" max="10" value="0"></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="matkul" value="matkul1"></td>
+									<td>10000000</td>
+									<td>Ini nama matakuliah</td>
+									<td><input type="number" name="prioritas" class="prioritas" min="0" max="10" value="0"></td>
+								</tr>
+							</tbody>
+						</table>
+					</fieldset>
+					<input type="submit" name="kirim" id="kirim" value="Kirim">
+				</form>
 			</section>
 			<footer>
+				<p>About Us | Help Center | Privacy & Policy</p>
 				<p>Copyright &copy; 2018 by Fathul Husnan, Omar Sugiharto, Joann Albertus Saumana.</p>
 			</footer>
 		</div>
