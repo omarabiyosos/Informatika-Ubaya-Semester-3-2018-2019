@@ -19,7 +19,7 @@ header.login, section.login, footer.login{
 	border: none;
 	padding: 0;
 }
-.login input, select{
+.login input, .login select{
 	margin-top: 10px;
 	border-radius: 5px;
 }
@@ -162,7 +162,7 @@ input#kirim:hover, button:hover{
 h1{
 	font-family: cambria, "Times New Roman";
 }
-table#pilih{
+table{
 	width: 100%;
 }
 #pilih .col1{
@@ -172,36 +172,60 @@ table#pilih{
 	width: 25%;
 }
 #pilih .col3{
-	width: 60%;
+	width: 50%;
 }
 #pilih .col4{
 	width: 10%;
 }
-table#pilih, #pilih tr, #pilih th, #pilih td{
+#pilih .col5{
+	width: 10%;
+}
+table, tr, th, td{
 	border-bottom: 3px solid white;
 	border-collapse: collapse;
-	padding: 5px;
+	padding: 10px;
 	color: white;
 	text-align: center;
 }
-#pilih tr:nth-child(odd) th{
+#pilih table, #pilih tr, #pilih th, #pilih td{
+	padding: 5px;
+}
+tr:nth-child(odd) th{
 	background-color: white;
 	color: #663300;
 }
-#pilih tr:nth-child(odd){
+tr:nth-child(odd){
 	background-color: #663300;
 }
-#pilih tr:nth-child(even){
+tr:nth-child(even){
 	background-color: #cc9900;
 }
-#pilih input.prioritas{
+#pilih input.prioritas, #pilih select{
 	background-color: rgba(255, 255, 255, 0.3);
 	border: none;
-	border-collapse: 10%;
-	padding: 10px;
 	color: white;
+	margin: 5px;
 }
-
+#pilih input.prioritas{
+	padding: 11px;
+}
+#pilih select{
+	padding: 10px;
+}
+#pilih option{
+	color: black;
+}
+#paging{
+	text-align: center;
+	margin: 10px;
+}
+.page-number{
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 5px;
+	background-color: #DDD;
+	box-shadow: 0 1px 1px black;
+}
 /*Bagian Index*/
 #profile{
 	min-height: 214px;
