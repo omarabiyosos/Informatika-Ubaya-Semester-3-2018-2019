@@ -226,6 +226,20 @@ tr:nth-child(even){
 	background-color: #DDD;
 	box-shadow: 0 1px 1px black;
 }
+.setuju, .tolak, .tunggu{
+	padding: 5px 10px;
+	color: white;
+}
+.setuju {
+	background-color: green;
+}
+.tolak {
+	background-color: red;
+}
+.tunggu {
+	background-color: orange;
+}
+
 /*Bagian Index*/
 #profile{
 	min-height: 214px;
