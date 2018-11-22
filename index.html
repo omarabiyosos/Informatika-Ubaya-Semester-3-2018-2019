@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Pilih Matakuliah</title>
+		<title>Beranda</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
-	<body id="index">
-		<nav>
+	<body>
+		<nav id="menu-kiri">
 			<ul>
 				<a href="index.html"><li>Beranda</li></a>
 				<a href="daftar.html"><li>Daftar Matakuliah</li></a>
@@ -16,9 +15,19 @@
 				<a href="login.html"><li>Log Out</li></a>
 			</ul>
 		</nav>
+		<nav id="menu-atas">
+			<select name="menu" onchange="location = this.value;">
+				<option value="index.html">Beranda</option>
+				<option value="daftar.html">Daftar Matakuliah</option>
+				<option value="pilih.html">Pilih Kelas Asistensi</option>
+				<option value="riwayat.html">Riwayat Asistensi</option>
+				<option value="http://my.ubaya.ac.id/">My UBAYA</option>
+				<option value="login.html">Log out</option>
+			</select>
+		</nav>
 		<div id="wrapperIndex">
 			<header>
-				<div id="profile">
+				<fieldset>
 					<div class="image-container">
 						<img id="profile-image" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png">
 					</div>
@@ -31,11 +40,66 @@
 						Semester : <span class="light">Unknown</span>  <br>
 						Status Asistensi : <span class="light">Unknown</span> 
 					</div>
-				</div>
+				</fieldset>
 			</header>
 			<section>
-				<div></div>
-				<p>Ini isi</p>
+				<fieldset>
+					<legend>Presensi</legend>
+					<div style=" display: table;  table-layout: fixed; width: 100%;">
+					<div style="display: table-cell; overflow-x: auto; width: 100%;">
+					<table>
+						<thead>
+						<tr>
+							<th>Kode Matakuliah</t>
+							<th>Matakuliah</th>
+							<th>KP</th>
+							<th>Dosen Pengajar</th>
+							<th>Kehadiran</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1607A031</td>
+							<td>Pemrograman Basis Data</td>
+							<td>B</td>
+							<td>Drs. Heru Arwoko M.T.</td>
+							<td>HHHHHHAHHHHHHH</td>
+						</tr>
+						<tr>
+							<td>1604A043</td>
+							<td>Pemrograman Web</td>
+							<td>A</td>
+							<td>Dr. Budi Hartanto S.T., M.Sc</td>
+							<td>HHHHHHHHAHAHHH</td>
+						</tr>
+						<tr>
+							<td>1604A051</td>
+							<td>Pemrograman Terdistribusi</td>
+							<td>A</td>
+							<td>Dr. Joko Siswantoro S.Si., M.Si.</td>
+							<td>HHHHHHHAHAAHHH</td>
+						</tr>
+					</table>
+					</div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Notifikasi</legend>
+					<h4 class="border-down">Kamis, 25 Oktober 2018</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h4 class="border-down">Senin, 8 Oktober 2018</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</fieldset>
 			</section>
 			<footer>
 				<p>Copyright &copy; 2018 by Fathul Husnan, Omar Sugiharto, Joann Albertus Saumana.</p>
